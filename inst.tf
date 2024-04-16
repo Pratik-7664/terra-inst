@@ -87,7 +87,7 @@ resource "aws_security_group" "allow_ssh_http" {
 
 # VM with user data for webserver
 resource "aws_instance" "myinstance" {
-  ami                         = "ami-0fa377108253bf620"
+  ami                         = "ami-06c4be2792f419b7b"
   instance_type               = "t2.micro"
   key_name                    = "new-20"
   associate_public_ip_address = true
