@@ -89,7 +89,7 @@ resource "aws_security_group" "allow_ssh_http" {
 resource "aws_instance" "myinstance" {
   ami                         = "ami-06c4be2792f419b7b"
   instance_type               = "t2.micro"
-  key_name                    = "new-20"
+  key_name                    = "pratik-key"
   associate_public_ip_address = true
   subnet_id                   = aws_subnet.subnet_1.id
   vpc_security_group_ids      = [aws_security_group.allow_ssh_http.id]
